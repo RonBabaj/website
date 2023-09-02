@@ -18,10 +18,10 @@ class home extends StatelessWidget {
         drawer: Container(width: 200, child: menu()),
         body: SafeArea(
           child: Stack(children: [
-            if (Responsive.isBig(context)) Expanded(child: screen()),
-            if (Responsive.isDesktop(context)) Expanded(child: screenDesktop()),
+            if (Responsive.isBig(context)) screen(),
+            if (Responsive.isDesktop(context)) screenDesktop(),
             if (!Responsive.isBig(context) && !Responsive.isDesktop(context))
-              Expanded(child: screenMobile()),
+              screenMobile(),
             if (!Responsive.isBig(context) && !Responsive.isDesktop(context))
               header(),
             if (Responsive.isBig(context)) headerBig(),

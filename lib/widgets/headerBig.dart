@@ -152,8 +152,7 @@ class _headerBigState extends State<headerBig> {
               InkWell(
                   onTap: () {
                     setState(() {
-                      screen.scrollController.animateTo(
-                          screen.scrollController.position.maxScrollExtent,
+                      screen.scrollController.animateTo(5000,
                           duration: Duration(microseconds: 1000),
                           curve: Curves.fastOutSlowIn);
                     });
